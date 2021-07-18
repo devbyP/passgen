@@ -1,0 +1,19 @@
+{
+  "name": "passgen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo run index.js in dist folder",
+    "build": "tsc && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
