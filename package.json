@@ -5,15 +5,23 @@
   "main": "index.js",
   "scripts": {
     "start": "echo run index.js in dist folder",
-    "build": "tsc && npm start"
+    "build": "tsc && npm start",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^8.0.0"
+    "chalk": "^4.1.1",
+    "clipboardy": "^2.3.0",
+    "commander": "^8.0.0",
+    "inquirer": "^8.1.2"
   },
   "devDependencies": {
+    "@types/inquirer": "^7.3.3",
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
     "typescript": "^4.3.5"
   }
 }
