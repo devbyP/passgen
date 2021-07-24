@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./dist/index.js",
   "scripts": {
     "start": "echo run index.js in dist folder",
     "build": "tsc && npm start",
