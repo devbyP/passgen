@@ -7,6 +7,9 @@ const savePassword = (password: string, name?: string) => {
   if (name?.charAt(0) === '.') {
     throw new Error('name cannot be ".".');
   }
+  if (name?.includes(':') || name?.includes(os.EOL)) {
+    throw new Error('Illegal character in name.');
+  }
   if (!name) {
     name = '.';
   }
