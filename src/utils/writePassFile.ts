@@ -1,6 +1,6 @@
 import fs from 'fs';
 import os from 'os';
-import path from 'path';
+import { txtPath } from '../config';
 
 const writePassFile = (data:string) => {
   const senityCheck = data.split(os.EOL);
@@ -8,8 +8,7 @@ const writePassFile = (data:string) => {
   if (senityCheck[senityCheck.length - 1] !== '') {
     writeData = writeData + os.EOL;
   }
-  const passTxt = path.join(__dirname, '../../', 'password.txt');
-  fs.writeFileSync(passTxt, writeData, {encoding:'utf-8'});
+  fs.writeFileSync(txtPath, writeData, {encoding:'utf-8'});
 }
 
 export default writePassFile;
